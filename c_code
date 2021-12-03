@@ -2,8 +2,7 @@ void write_cvs(){
     // open both files. one to read from data, and one to write data to
     FILE * fuserinfo = fopen("C:\\Users\\Eytan Rothschild\\PycharmProjects\\Igriculture\\temp_new_file.txt", "r");
     char str_info[150];
-    //int tab_space =3;
-    // creating variables to be saved in excel
+    // creating variables to be saved in excel - used only once
     //char token[10], email[15], username[15], password[15], dob[10];
     FILE * fnewuser = fopen("user_list.csv", "a");
     // scan the file and save it into a new string called -> str_info
@@ -19,7 +18,5 @@ void write_cvs(){
 int main()
 {
     write_cvs();
-    // search_cvs(token);
-    // char* token[10];
     printf("*** Successfully copied to document ***");
 }
